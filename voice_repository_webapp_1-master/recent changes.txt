@@ -1,0 +1,2 @@
+deleted script.py
+create another models.py to modify 

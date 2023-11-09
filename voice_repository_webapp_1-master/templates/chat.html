@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-2" style="margin-left: 20px; padding: 10px ; border: solid darkblue">
+            <div class="container" >
+                {% if user.is_authenticated %}
+                    <p style="color: white; font-size: 18px">
+                        Doctor Name: <b style="color: darkblue;">{{ user.username }}</b>
+                    </p>
+                <!--{% endif %}-->
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+           <div class="container">
+              <div id="chat-body" class="panel panel-default">
+                <div class="panel-heading" style="color: white; background: darkblue">+++Prescription+++</div>
+              </div>
+                <h3>
+                    Patient Name
+                </h3>
+                <button id="start-recording">Start</button>
+                <button id="stop-recording" disabled>Stop</button>
+                <button id="pause-recording" disabled>Pause</button>
+                <button id="resume-recording" disabled>Resume</button>
+
+                <section class="experiment">
+                    <div id="audios-container"></div>
+                    <ul id="msg-list" class="list-group"></ul>
+                    <!--<ul id="msg-list" class="list-item"></ul>-->
+                </section>
+               
+                <!--Another Parameter-->
+
+        <div class="col-lg-8">
+           <div class="container">
+                <h3>
+                    Patient AGE:...........
+                </h3>
+                <button id="start-recording">Start</button>
+                <button id="stop-recording" disabled>Stop</button>
+                <button id="pause-recording" disabled>Pause</button>
+                <button id="resume-recording" disabled>Resume</button>
+
+                <section class="experiment2">
+                    <div id="audios-container2"></div>
+                    <ul id="msg-list" class="list-group"></ul>
+                </section>
+                <!--Another Parameter Ends-->
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
