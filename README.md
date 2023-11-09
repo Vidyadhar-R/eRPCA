@@ -1,5 +1,17 @@
-# eRPCA
+# voice_repository_webapp_1
 
-This is Voice repository web app. where we can extract the details of patients using voice.
+# Django app to allow Doctors to convert their speech into text
 
-Source code is written in python. Requirement.txt file is available, install it. using dependencies, we can spin up the web app.
+# Commands to Setup the environment and run the server
+
+> git clone this repository
+
+> cd voice_repository_webapp_1
+
+> virtualenv venv
+
+> source venv/bin/activate
+
+> pip install -r requirements.txt
+
+> python manage.py runserver
