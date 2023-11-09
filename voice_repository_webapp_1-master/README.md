@@ -4,7 +4,7 @@
 
 # Commands to Setup the environment and run the server
 
-> git clone https://github.com/rajivpatnaikiot/voice_repository_webapp_1.git
+> git clone this repository
 
 > cd voice_repository_webapp_1
 
